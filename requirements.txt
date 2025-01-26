@@ -1,0 +1,5 @@
+mem0ai
+streamlit
+autogen-agentchat[gemini]~=0.2
+google-generativeai
+ag2[gemini]
