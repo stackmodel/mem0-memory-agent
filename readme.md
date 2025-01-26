@@ -46,7 +46,7 @@ This is especially useful for maintaining a consistent conversation flow and off
 
 2. Conversable Agent (AutoGen):
 
-The ConversableAgent is a custom AI model that handles the generation of responses. The Agent is configured to use a specific model (gemini-1.5-flash-latest) and operates in a "never" human input mode, meaning it doesn't ask for further clarifications from users directly, but provides responses based on prior interactions.
+The Agent is configured to use a specific model (gemini-1.5-flash-latest) and operates in a "never" human input mode, meaning it doesn't ask for further clarifications from users directly, but provides responses based on prior interactions.
 
 3. Streamlit for Frontend:
 
