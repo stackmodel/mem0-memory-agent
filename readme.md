@@ -1,4 +1,7 @@
 **Adding Long Term Memory to Agent**  
+
+![app_screenshot](https://github.com/user-attachments/assets/bb7d2a06-b97e-4a42-aa6c-e7866f5e66ac)
+
 This code demonstrates the creation of a personalized AI Agent for providing support in the context of precision medicine. The Agent utilizes memory management to provide relevant responses based on prior user interactions, offering a more personalized and context-aware experience.
 
 **Setup Instructions**
@@ -53,10 +56,13 @@ The initial conversation focuses on providing information about precision medici
 The chatbot dynamically adds new messages to memory and retrieves relevant past interactions whenever the user asks a new question. This helps the chatbot tailor its responses based on the user’s past input.
 
 **Code Flow**
-1️⃣ User Submits a Question via the Streamlit chat interface. (can also be voice activated assistant)
-2️⃣ Mem0 Searches for Relevant Memories:
-If relevant memories exist, they’re retrieved; if not, Mem0 decides whether to add new ones based on the query.
-3️⃣ Query & Memories Sent to the AI Agent for further processing.
-4️⃣ Agent Utilizes a Large Language Model (LLM):
-In this example, we use Gemini-1.5-flash-latest to craft thoughtful responses, combining both the user’s query and relevant contextual info.
-5️⃣ Response Displayed to the user via the Streamlit interface.
+
+![mem0_f1](https://github.com/user-attachments/assets/e0e2c34c-9af9-4937-a68e-9ca818cd834d)
+
+    1️⃣ User Submits a Question via the Streamlit chat interface. (can also be voice activated assistant)
+    2️⃣ Mem0 Searches for Relevant Memories:
+        If relevant memories exist, they’re retrieved; if not, Mem0 decides whether to add new ones based on the query.
+    3️⃣ Query & Memories Sent to the AI Agent for further processing.
+    4️⃣ Agent Utilizes a Large Language Model (LLM):
+        In this example, we use Gemini-1.5-flash-latest to craft thoughtful responses, combining both the user’s query and relevant                  contextual info.
+    5️⃣ Response Displayed to the user via the Streamlit interface.
