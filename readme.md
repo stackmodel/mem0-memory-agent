@@ -30,6 +30,12 @@ cd mem0-memory-agent
 4. Run the app using the following command: ```streamlit run app.py```
    launch the app in your browser at http://localhost:8501
 
+**Ask any questions related to precision medicine, below are some sample questions**
+
+What is precision medicine, and how can it be tailored to a patient’s unique health needs?
+How does genetic testing work in precision medicine, and what kind of sample is required for the test?
+What happens after a patient takes a genetic test in the precision medicine process, and how are the results used to create a treatment plan?
+How can a patient schedule a consultation with a genetic counselor, and what consultation options are available (e.g., virtual or in-person)?
 
 **Key features and concepts in the code**
 
