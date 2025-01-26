@@ -35,25 +35,25 @@ cd mem0-memory-agent
 
 1. Memory Integration (Mem0):
 
-The MemoryClient is used to store and retrieve past user interactions, allowing the chatbot to remember the user's context across sessions.
+The MemoryClient is used to store and retrieve past user interactions, allowing the agent to remember the user's context across sessions.
 This is especially useful for maintaining a consistent conversation flow and offering answers based on previous user inputs.
 
 2. Conversable Agent (AutoGen):
 
-The ConversableAgent is a custom AI model that handles the generation of responses. The chatbot is configured to use a specific model (gemini-1.5-flash-latest) and operates in a "never" human input mode, meaning it doesn't ask for further clarifications from users directly, but provides responses based on prior interactions.
+The ConversableAgent is a custom AI model that handles the generation of responses. The Agent is configured to use a specific model (gemini-1.5-flash-latest) and operates in a "never" human input mode, meaning it doesn't ask for further clarifications from users directly, but provides responses based on prior interactions.
 
 3. Streamlit for Frontend:
 
-The code uses Streamlit to create a web-based interface where users can interact with the chatbot.
+The code uses Streamlit to create a web-based interface where users can interact with the Agent.
 Users can enter prompts (questions), and the Agent responds in real-time, showing the conversation history.
 
-4. Personalized Medicine Consultation:
+4. Precision Medicine Consultation:
 
-The initial conversation focuses on providing information about precision medicine in cancer care. The chatbot uses natural language to engage the user, explaining complex medical topics like genetic testing for cancer and offering to schedule appointments.
+The initial conversation focuses on providing information about precision medicine in cancer care. The Agent uses natural language to engage the user, explaining complex medical topics like genetic testing for cancer and offering to schedule appointments.
 
 5. Memory Update:
 
-The chatbot dynamically adds new messages to memory and retrieves relevant past interactions whenever the user asks a new question. This helps the chatbot tailor its responses based on the user’s past input.
+The agent dynamically adds new messages to memory and retrieves relevant past interactions whenever the user asks a new question. This helps the agent tailor its responses based on the user’s past input.
 
 **Code Flow**
 
@@ -64,5 +64,11 @@ The chatbot dynamically adds new messages to memory and retrieves relevant past 
         If relevant memories exist, they’re retrieved; if not, Mem0 decides whether to add new ones based on the query.
     3️⃣ Query & Memories Sent to the AI Agent for further processing.
     4️⃣ Agent Utilizes a Large Language Model (LLM):
-        In this example, we use Gemini-1.5-flash-latest to craft thoughtful responses, combining both the user’s query and relevant                  contextual info.
+        In this example, we use Gemini-1.5-flash-latest to craft thoughtful responses, combining both the user’s query and relevant contextual info.
     5️⃣ Response Displayed to the user via the Streamlit interface.
+
+**TL;DR**
+
+Chatbot vs Agent
+
+At a coffee shop, Chatbot follows a fixed menu, handling only predefined orders. AI Agent, however, can suggest custom drinks, like a spicy cinnamon latte, because it reasons and adapts based on knowledge.
